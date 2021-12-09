@@ -121,6 +121,8 @@
         <nav-bar selected="home"></nav-bar>
         <div id="scrollingline" style="background-image:linear-gradient(  to right,  #00ff44, #ff1500,#ffbf00,#0062ff);height: 60px; width: 0%;"></div>
     </div>
+    <script>
+    </script>
     <div id="mob-parallax">
         <img src="images\ParallaxPNG\1.png " style="position: absolute; width: 100%; height: 100%; " alt="">
         <img src="images\ParallaxPNG\2.png " style="position: fixed; width: 100%; height: 100%; " alt="" id="hide-mountains-3">
@@ -479,6 +481,22 @@
         getScroll()
             // }
     }, 1);
+
+    function scrollline() {
+
+        let scrollHeight = Math.max(
+            document.body.scrollHeight, document.documentElement.scrollHeight,
+            document.body.offsetHeight, document.documentElement.offsetHeight,
+            document.body.clientHeight, document.documentElement.clientHeight
+        );
+        linewidth = (window.pageYOffset / scrollHeight) * 130
+        document.getElementById('scrollingline').style.width = linewidth + '%'
+    }
+    setInterval(() => {
+        // if (pageYOffset < screen.height) {
+        scrollline()
+            // }
+    }, 0);
 </script>
 
 </html>

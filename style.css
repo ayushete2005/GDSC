@@ -29,10 +29,6 @@ body::-webkit-scrollbar {
     z-index: 1000;
 }
 
-.content img {
-    /* width: 100%; */
-}
-
 .content .content-container {
     margin: 0 auto;
     width: 90%;
@@ -71,12 +67,12 @@ body::-webkit-scrollbar {
     .whitespace {
         height: 79vh;
     }
-    .text {
+    /* .text {
         width: 94%;
         left: 3vw;
         height: 23vh;
         top: 25%;
-    }
+    } */
     .content {
         padding: 0;
     }

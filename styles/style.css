@@ -113,10 +113,10 @@ ul li {
 }
 
 .desc-text {
-    padding-left: 5px;
-    padding-right: 5px;
     font-size: 20px;
+    width: 100%;
     text-align: center;
+    position: relative;
 }
 
 p {
@@ -135,6 +135,12 @@ p {
     }
     .pc-parallax {
         display: block;
+    }
+    .text {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        line-height: 50px;
     }
 }
 
@@ -157,6 +163,14 @@ p {
     }
     .pc-parallax {
         display: none;
+    }
+    .text {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .mt-3em {
+        margin-top: 10em;
     }
 }
 
@@ -246,14 +260,10 @@ ul li {
 }
 
 .desc-text {
-    padding-left: 10px;
-    padding-right: 10px;
     font-size: 20px;
-    width: 80%;
+    width: 100%;
     text-align: center;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .about-img {
@@ -263,13 +273,6 @@ ul li {
     left: 50%;
     transform: translateX(-50%);
     display: block;
-}
-
-.text {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    line-height: 50px;
 }
 
 .heart {
@@ -473,7 +476,6 @@ Multicoloured Hover Variations
 
 #lab_social_icon_footer #social-linkedin:hover {
     color: #2867B2;
-    ;
 }
 
 #lab_social_icon_footer #social-instagram:hover {

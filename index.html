@@ -43,15 +43,15 @@
         function loader() {
             setTimeout(() => {
                 document.getElementById('loader').style.opacity = '0';
-            }, 3900);
-            // }, 0);
+                // }, 3900);
+            }, 0);
             setTimeout(() => {
                 document.getElementById('loader').style.display = 'none';
                 document.getElementById('html').style.overflow = 'scroll';
                 document.getElementById('navbar').style.display = 'block';
 
-            }, 4000);
-            // }, 0);
+                // }, 4000);
+            }, 0);
         }
     </script>
 
@@ -247,10 +247,10 @@
         <!-- Contact -->
 
         <section class="mt-3em " style="width: 100%;">
-            <section id="lab_social_icon_footer">
+            <section id="lab_social_icon_footer" style="padding: 10px;">
                 <div class="faq-title text-center pb-3">
 
-                    <h2 style="padding-bottom: 40px; ">Contact Us!</h2>
+                    <h2>Contact Us!</h2>
                 </div>
 
                 <div>
@@ -296,6 +296,40 @@
 
 
 
+                        </div>
+                        <div>
+                            <div class="card" style="background-color: #dedede; border: none;">
+                                <div class="card-header" id="faqHeading-00" style="margin: auto; width: max-content; background-color: #dedede; border: none;">
+                                    <div class="mb-0" style="border: 6px solid #8c8cff;    border-radius: 17px;">
+                                        <button class="faq-title btn" data-toggle="collapse" data-target="#faqCollapse-00" data-aria-expanded="true" data-aria-controls="faqCollapse-00">
+                                            Join us Now !!
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="faqCollapse-00" class="collapse" aria-labelledby="faqHeading-00" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfBGnW_LpH-2xnVkWKQbakjNncv0af5x0boH4Cv1wi4NN90vw/viewform?embedded=true" class='form-size' frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                                    </div>
+                                    <style>
+                                        /* pc */
+                                        
+                                        @media (min-width: 660px) {
+                                            .form-size {
+                                                width: 50%;
+                                                height: 1211px;
+                                            }
+                                        }
+                                        /* mob  */
+                                        
+                                        @media (max-width: 660px) {
+                                            .form-size {
+                                                width: 100%;
+                                                height: 1700px;
+                                            }
+                                        }
+                                    </style>
+                                </div>
+                            </div>
                         </div>
 
 

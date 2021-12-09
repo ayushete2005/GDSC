@@ -27,7 +27,7 @@
     <style>
         #loader {
             animation-name: rotate;
-            animation-duration: 4s;
+            animation-duration: 5s;
         }
         
         @keyframes rotate {
@@ -43,14 +43,14 @@
         function loader() {
             setTimeout(() => {
                 document.getElementById('loader').style.opacity = '0';
-            }, 3900);
+            }, 2900);
             // }, 0);
             setTimeout(() => {
                 document.getElementById('loader').style.display = 'none';
                 document.getElementById('html').style.overflow = 'scroll';
                 document.getElementById('navbar').style.display = 'block';
 
-            }, 4000);
+            }, 3000);
             // }, 0);
         }
     </script>
